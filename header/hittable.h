@@ -23,7 +23,7 @@ class hittable {
   public:
     virtual ~hittable() = default;   //virtual allows runtime polymorphism and that derived class can make use of this overridden func
 
-    virtual bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) const = 0;  //=0 ensures that this base class doesn't has any implementation and is a pure virtual class
+    virtual bool hit(const ray& r, interval ray_t, hit_record& rec) const = 0;  //=0 ensures that this base class doesn't has any implementation and is a pure virtual class
 }; 
 
 #endif

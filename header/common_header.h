@@ -2,10 +2,13 @@
 #define COMMON_HEADER_H
 
 #include <cmath>
+#include <cstdlib>
 #include <iostream>
 #include <limits>
 #include <memory>
 #include <vector>
+#include <interval.h>
+#include <algorithm>
 
 using std::make_shared;
 using std::shared_ptr;
